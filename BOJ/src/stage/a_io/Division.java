@@ -1,4 +1,4 @@
-package stage.io;
+package stage.a_io;
 
 /*
     문제 1008번 : A/B

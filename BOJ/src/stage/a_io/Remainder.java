@@ -1,4 +1,4 @@
-package stage.io;
+package stage.a_io;
 
 /*
     문제 10430번 : 나머지

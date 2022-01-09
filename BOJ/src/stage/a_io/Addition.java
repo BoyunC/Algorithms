@@ -1,13 +1,13 @@
-package stage.io;
+package stage.a_io;
 
 /*
-    문제 1001번 : A-B
+    문제 1000번 : A+B
 */
 
 import java.util.Scanner;
 
-public class Subtraction {
-    public static void main(String[] args){
+public class Addition {
+    public static void main(String[] args) {
         Scanner kb = new Scanner(System.in);
 
         int n = kb.nextInt();
