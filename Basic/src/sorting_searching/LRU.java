@@ -9,7 +9,7 @@ public class LRU {
     // n 	: 입력된 페이지 수
     // arr 	: 페이지 번호 배열
 
-    public int[] solution(int size, int n, int[] arr) {
+    public int[] solution(int size, int[] arr) {
 
         int[] answer = new int[size]; // 주기억장치
 
@@ -18,10 +18,8 @@ public class LRU {
             int pos = -1;
 
             for(int i=0; i<size; i++) {
-
                 if(x == answer[i])
                     pos = i;		// 주기억장치에 페이지 존재하는지 여부 확인
-
             }
 
             if(pos==-1) {		// 주기억장치에 페이지가 존재하지 않는 경우
@@ -29,13 +27,14 @@ public class LRU {
                 for(int i=size-1; i>=1; i--) {
                     answer[i] = answer[i-1]; // 모든 페이지를 한 칸씩 뒤로 이동
                 }
-
             } else {			// 주기억장치에 페이지가 존재하는 경우
 
                 for(int i=pos; i>=1; i--) {
                     answer[i] = answer[i-1]; // 인덱스 0부터 해당 인덱스까지 한 칸씩 뒤로 이동
                 }
             }
+
+            answer[0] = x;
         }
 
         return answer;
@@ -53,6 +52,11 @@ public class LRU {
         for(int i=0; i<n; i++)
             arr[i] = kb.nextInt();
 
-        System.out.println(lru.solution(size, n, arr));
+        for(int i=0; i<n; i++)
+            System.out.print(arr[i] + " " );
+
+        for(int x: lru.solution(size, arr)) {
+            System.out.print(x + " ");
+        }
     }
 }
