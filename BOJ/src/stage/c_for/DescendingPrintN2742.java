@@ -1,19 +1,19 @@
 package stage.c_for;
 
 /*
-    문제 2741번 : N 찍기
+    문제 2742번 : 기찍 N
 */
 
 import java.util.Scanner;
 
-public class PrintN2741 {
+public class DescendingPrintN2742 {
     public static void main(String[] args) {
         Scanner kb = new Scanner(System.in);
 
         int n = kb.nextInt();
 
-        for(int i=0; i<n; i++) {
-            System.out.println(i+1);
+        for(int i=n; i>0; i--){
+            System.out.println(i);
         }
     }
 }

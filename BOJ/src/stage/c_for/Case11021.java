@@ -1,12 +1,12 @@
 package stage.c_for;
 
 /*
-    문제 10950번 : A+B-3
+    문제 11021번 : A+B -7
 */
 
 import java.util.Scanner;
 
-public class Array10950 {
+public class Case11021 {
     public static void main(String[] args) {
         Scanner kb = new Scanner(System.in);
 
@@ -19,8 +19,10 @@ public class Array10950 {
             arr[i][1] = kb.nextInt();
         }
 
-        for(int i=0; i<n; i++){
+        for(int i=0; i<n; i++) {
+            System.out.print("Case #" + (i+1) + ": ");
             System.out.println(arr[i][0]+arr[i][1]);
         }
+
     }
 }
