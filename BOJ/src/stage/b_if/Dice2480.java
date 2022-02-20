@@ -25,8 +25,10 @@ public class Dice2480 {
             } else if(b==c) {
                 answer = 1000 + b * 100;
             } else if(c==a) {
-                answer = 1000
+                answer = 1000 + c * 100;
             }
         }
+
+        System.out.println(answer);
     }
 }
