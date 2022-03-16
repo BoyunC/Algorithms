@@ -17,10 +17,13 @@ public class Statistics2108 {
         int n = Integer.parseInt(input.readLine());
 
         int[] list = new int[n];
-        int[] count = new int[n];
 
         int total = 0;
         int cnt = 1;
+
+        boolean flag = false;
+        int mode = Integer.MAX_VALUE;
+        int max = 0;
 
         for(int i=0; i<n; i++) {
             list[i] = Integer.parseInt(input.readLine());
@@ -29,28 +32,33 @@ public class Statistics2108 {
 
         Arrays.sort(list);
 
-        for(int x: list)
-            System.out.print(x + " ");
+        for(int i=0; i<n; i++) {
+            int jump = 0;
+            int count = 1;
+            int value = list[i];
 
-        System.out.println();
-
-        count[0] = 1;
-        for(int i=1; i<n; i++) {
-            if(list[i] == list[i-1]){
-                cnt++;
-            } else {
-                count[i] = cnt;
-                cnt = 1;
+            for(int j= 1+i; j<n; j++){
+                if(value != list[j])
+                    break;
+                count++;
+                jump++;
             }
+
+            if(count > max) {
+                max = count;
+                mode = value;
+                flag = true;
+            } else if(count == max && flag == true) {
+                mode = value;
+                flag = false;
+            }
+
+            i += jump;
         }
 
-        for(int x: count)
-            System.out.print(x + " ");
-
-        System.out.println();
-
-        System.out.println(total/n);
+        System.out.println((int)Math.round((double)total / n));
         System.out.println(list[n/2]);
+        System.out.println(mode);
         System.out.println(list[n-1]-list[0]);
 
     }
