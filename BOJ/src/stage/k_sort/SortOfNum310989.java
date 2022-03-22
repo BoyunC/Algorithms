@@ -8,6 +8,7 @@ import java.io.*;
 import java.util.Arrays;
 
 public class SortOfNum310989 {
+
     public static void main(String[] args) throws IOException {
         BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter output = new BufferedWriter(new OutputStreamWriter(System.out));
