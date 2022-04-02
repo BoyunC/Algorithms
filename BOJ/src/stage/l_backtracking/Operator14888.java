@@ -36,9 +36,9 @@ public class Operator14888 {
                     dfs(num*numbers[index], index+1);
                 else if(i==3)
                     dfs(num/numbers[index], index+1);
-            }
 
-            operator[i]++;
+                operator[i]++;
+            }
         }
     }
 
