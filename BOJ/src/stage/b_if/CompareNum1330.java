@@ -4,11 +4,8 @@ package stage.b_if;
     문제 1330번 : 두 수 비교하기
 */
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.Scanner;
-import java.util.StringTokenizer;
 
 public class CompareNum1330 {
 

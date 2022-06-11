@@ -4,9 +4,7 @@ package stage.b_if;
     문제 14681번 : 사분면 고르기
 */
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class QuadrantN14681 {

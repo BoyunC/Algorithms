@@ -4,7 +4,6 @@ package stage.g_string;
      문제 1157번 : 단어 공부
 */
 
-import java.util.HashMap;
 import java.util.Scanner;
 
 public class Voca1157 {

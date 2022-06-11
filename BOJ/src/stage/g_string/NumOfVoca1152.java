@@ -4,7 +4,6 @@ package stage.g_string;
      문제 1152번 : 단어의 개수
 */
 
-import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 

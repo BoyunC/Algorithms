@@ -4,11 +4,8 @@ package stage.b_if;
     문제 9498번 : 시험 성적
 */
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.Scanner;
-import java.util.StringTokenizer;
 
 public class TestGrade9498 {
 
